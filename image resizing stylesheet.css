@@ -4,11 +4,29 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-img {
+#squareimg {
     height: 200px;
     width: 200px;
     border: 4px solid white;
 }
 h1 {
     font-size: 260%;
+}
+pre {
+    background-image: url('https://img.freepik.com/free-photo/close-up-blank-old-concrete-wall_23-2147856094.jpg?size=626&ext=jpg');
+    font-family: 'Snell Roundhand';
+    font-size: 180%;
+    color: black;
+    padding: 24px;
+}
+#serious {
+    background-image: url('https://images.pexels.com/users/avatars/840092/aa-dil-111.jpeg?w=256&h=256&fit=crop&crop=faces&auto=compress'); 
+    background-repeat: no-repeat; 
+    background-color: black;
+    background-size: 186px;
+    width: 138px; 
+    height: 40px; 
+    border: 4px solid white; 
+    padding: 24px;
+    padding-top: 220px;
 }
