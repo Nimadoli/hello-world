@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-image: url(Goat-iStock-524907632.jpg);
+            background-image: url('Goat-iStock-524907632-Web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             margin: 42px;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: rgb(40,40,40);
+            color: black;
+        }
+        /* For tablets */
+        @media only screen and (max-width:1000px) {
+            body {
+                background-image: url('Goat-iStock-524907632-Tablet.jpg');
+            }
+        }
+        /* For mobile phones */
+        @media only screen and (max-width:650px) {
+            body {
+                background-image: url('Goat-iStock-524907632-Phone.jpg');
+            }
         }
         section {
-            background-color: rgba(255,255,240,0.8);
+            background-color: rgba(255,255,245,0.6);
             padding: 32px;
             margin: 24px;
         }
@@ -85,7 +100,9 @@
         </address>
     </section>
     <section>
-        <p>Creamy and distinct in flavor, goat cheese is a dairy product enjoyed around the world. </p>
+        <p><img style="margin:16px;width:40%;float:right;" alt="Baaah" src="https://cdn.petpress.net/wp-content/uploads/2020/02/12045937/funny-goat-names.jpg">
+            Creamy and distinct in flavor, goat cheese is a dairy product enjoyed around the world.
+        </p>
         <p>Goat cheese comes in a wide variety of flavors and textures, from soft and spreadable fresh cheese to salty, crumbly aged cheese. </p>
         <p>Although it’s made using the same coagulation and separation process as cheese made from cow’s milk, goat cheese differs in nutrient content. </p>
         <p>Additionally, goat cheese is digested differently than cow’s milk and is a hypoallergenic alternative for those allergic to cheese made from cow’s milk. </p>
@@ -258,7 +275,7 @@
         </p>
     </section>
     <section>
-        <a class="chartbeat-section" name="very-filling">It May Be More Filling Than Other Cheeses</a>
+        <a class="chartbeat-section" name="very-filling"><h2>It May Be More Filling Than Other Cheeses</h2></a>
         <p>Goat milk contains a unique fatty acid profile that has been associated with several health benefits.</p>
         <p>For example, dairy products made from goat’s milk have been shown to possess anti-inflammatory properties and may even help decrease hunger.</p>
         <p>Goat’s milk is higher in short- and medium-chain fatty acids than cow’s milk. In particular, goat’s milk contains high amounts of the medium-chain fatty acids capric acid and caprylic acid.</p>
