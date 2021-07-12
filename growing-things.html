@@ -5,19 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-image: url("GrowthLarge.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 2vw;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
         h1 {
-            font-size:
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 8vw;
+        }
+        h2 {
+            color: #888;
+        }
+        /* For tablets */
+        @media only screen and (max-width:800px) {
+            body {
+                background-image: url("GrowthMedium.jpg");
+            }
+        }
+        /* For mobile phones */
+        @media only screen and (max-width:500px) {
+            body {
+                background-image: url("GrowthSmall.jpg");
+            }
         }
     </style>
 </head>
 <body>
     <h1>How lovely the silence of growing things</h1>
-    <p>Resize this page</p>
+    <h2>Resize this page</h2>
     <picture>
-        <source srcset="GrowthSmall.jpg" media="(max-width: 500px)">
-        <source srcset="GrowthMedium.jpg" media="(max-width: 800px)">
-        <source srcset="GrowthLarge.jpg">
-        <img src="GrowthLarge.jpg" alt="Plant sprouting" style="width:auto">
+        <source srcset="rose-opening-day1.png" media="(max-width: 500px)">
+        <source srcset="rose-opening-day3to5.png" media="(max-width: 800px)">
+        <source srcset="rose-opening-day7.png">
+        <img src="rose-opening-day7.png" alt="Rose opening" style="width:auto">
     </picture>
 </body>
 </html>
