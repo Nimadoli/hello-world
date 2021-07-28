@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fun with iframes</title>
+        <style>
+            body {
+                padding: 2%;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #FFB6C1;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            li a:hover {
+                background-color: #FF69B4;
+            }
+            iframe {
+                width: 300px;
+                height: 300px;
+                border: 0;
+            }
+            div {
+                display: block;
+                overflow: hidden;    
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Millions of boxes</h1>
+            <p>
+                <ul>
+                    <li><a title="Red" href="https://i.pinimg.com/originals/8e/4f/5a/8e4f5a242853ec40010975f5a71e665d.jpg" target="rediframe">Red</a></li>
+                    <li><a title="Green" href="https://www.uts.edu.au/sites/default/files/styles/tile_1x/public/2019-11/sci-dgbh-tile-6_0.jpg?itok=5L5mrZvF/" target="greeniframe">Green</a></li>
+                    <li><a title="Blue" href="https://i.pinimg.com/564x/9d/13/de/9d13dec1bcabdfa82f368f66f8fbee6d.jpg" target="blueiframe">Blue</a></li>
+                    <li><a title="Alpha" href="https://www.hunterphotos.co.uk/wp-content/uploads/2015/09/Black-Veined-Whites.jpg" target="alphaiframe">Alpha</a></li>
+                </ul>
+            </p>
+            <div>
+                <iframe name="rediframe" title="Red" src="https://pbs.twimg.com/media/CdsJrprUMAARJre.jpg"></iframe>
+                <iframe name="greeniframe" title="Green" src="https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80/"></iframe>
+                <iframe name="blueiframe" title="Blue" src="https://www.gregsglass.com/wp-content/uploads/2015/09/Oceanic-Blue.jpg"></iframe>
+                <iframe name="alphaiframe" title="Alpha" src="https://images.bluethumb.com.au/uploads/listing/347037/_franko-_-black-sugar-160cm-x-100cm-black-white-texture-ink-acrylic-gloss-finish-abstract-duplicate-bluethumb-4-5f6e.jpg?h=415&fit=clip&auto=compress&cs=tinysrgb&q=70&s=60c629dcdf652678f594a54e4b3cde48/"></iframe>
+            </div>
+        </section>
+    </body>
+</html>

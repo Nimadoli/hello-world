@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating a Basic Form</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Basic Form Structure</h1>
+    <form action="/action_page.php" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Personal details:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John" required="yes"><br>
+            <label for="lname" required="yes">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Smith"><br>
+        </fieldset>
+        <fieldset>
+            <legend>What's your favourite browser?</legend>
+            <input type="radio" name="browser" id="chrome" value="chrome">
+            <label for="chrome">Chrome</label><br>
+            <input type="radio" name="browser" id="edge" value="edge">
+            <label for="edge">Edge</label><br>
+            <input type="radio" name="browser" id="firefox" value="firefox">
+            <label for="firefox">Firefox</label><br>
+            <input type="radio" name="browser" id="safari" value="safari">
+            <label for="safari">Safari</label><br>
+            <input type="radio" name="browser" id="opera" value="opera">
+            <label for="opera">Opera</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Web developer preferences:</legend>
+            <label for="weblang">Select your favourite web language:</label>
+            <select id="weblang" name="weblang">
+                <option value="html" selected>HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select><br>
+            <label for="reason">Why is this your favourite?</label><br>
+            <textarea id="reason" name="reason" rows="5" cols="60" placeholder="Provide a short explanation."></textarea><br>
+            <label for="framework">What's your favourite framework?</label>
+            <input list="frameworklist" name="framework" id="framework">
+            <datalist id="frameworklist">
+                <option value="Bootstrap">
+                <option value="W3.CSS">
+                <option value="Angular">
+                <option value="React">
+            </datalist>
+        </fieldset>
+        <input type="submit" value="Supply details">
+    </form>
+</body>
+</html>
