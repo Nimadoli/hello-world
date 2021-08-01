@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Glorious Frog Leaders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
@@ -41,6 +42,68 @@ p {
  color: white;
 }
 
+div#frogsection {
+    background-color: navy;
+    padding: 42px;
+    position: relative;
+}
+
+div#frogheading {
+    position: absolute;
+    left: 58px;
+    top: 0;
+    opacity: 0.7;
+    font-size: 8vw;
+    line-height: 140%;
+}
+
+div#frogtext {
+    position: absolute;
+    left: 58px;
+    top: 560px;
+}
+
+div#stardiv {
+    width: 800px;
+    height: 100px;
+    background-image: url("frog-svgrepo-com.svg");
+    background-repeat: repeaxt-x;
+}
+
+section {
+    background-color: white;
+    border:2px solid black;
+    padding-left: 36px;
+    padding-right: 36px;
+    height: 800px;
+}
+
+section#pond {
+    background: url("pexels-couleur-2302908.jpeg") no-repeat center;
+    background-size: 44% auto;
+}
+
+section#lilypad {
+    background-image: url("pexels-frog-70083.jpeg"), url("frog-svgrepo-com(1).svg");
+    background-repeat: no-repeat, repeat;
+    background-size: 50% auto, 5% auto;
+    background-position: center;
+}
+
+h2 {font-family:Futura, sans-serif;}
+
+h2#ribbit {
+    font-size: 10vw;
+    line-height: 0;
+    text-align: center;
+}
+
+h2#froggies {
+    font-size: 8vw;
+    line-height: 0;
+    text-align: center;
+}
+
 </style>
 </head>
 
@@ -69,6 +132,26 @@ p {
 <p style="border: 0; background-color: transparent; padding: 0px;">
     <a href="frog leaders bouncy.html" title="Wanna bounce?">Bouncy</a>
 </p>
+
+<div id="frogsection">
+    <div id="frogheading"><h2>Fun fact about frogs</h2></div>
+    <div id="frogtext">
+        <p>When a frog swallows food, it pulls its eyes down into the roof of its mouth, to help push the food down its throat.</p>
+    </div>
+    <img alt="Frog" src="pexels-frog-63650.jpeg" style="width:100%;height:auto;">
+</div>
+
+<p><b>Note:</b> When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read. If you do not want to apply opacity to child elements, use RGBA color values to set the background color of the parent element.</p>
+
+<div id="stardiv"></div>
+
+<section id="pond">
+    <h2 id="ribbit">Ribbit.</h2>
+</section>
+<br>
+<section id="lilypad">
+    <h2 id="froggies"><span style="background-color:white;">Froggies</span></h2>
+</section>
 
 </body>
 </html>
