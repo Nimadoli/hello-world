@@ -9,6 +9,7 @@
 body {
  background-color: PapayaWhip;
  padding: 42px;
+ font-family: Courier, monospace;
 }
 
 h1 {
@@ -19,7 +20,6 @@ h1 {
 }
 
 p {
- font-family: Courier, monospace;
  color: DimGray;
  border: 32px solid LightCoral;
  background-color: OldLace;
@@ -73,10 +73,9 @@ div#stardiv {
 
 section {
     border:2px solid black;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding: 24px 36px;
     height: 800px;
-    margin-bottom: 24px;
+    margin: 12px 0px 24px;
 }
 
 section#pond {
@@ -106,6 +105,24 @@ h2#froggies {
     text-align: center;
 }
 
+.centered {
+    border: 5px dotted black;
+    background-color: white;
+    background-clip: content-box;
+    padding: inherit;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    padding: 4%;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 2vw;
+    float: left;
+    margin: 12px 12px 12px 0px;
+}
+
 </style>
 </head>
 
@@ -130,7 +147,6 @@ h2#froggies {
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
-    <br>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
@@ -145,7 +161,6 @@ h2#froggies {
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
-    <br>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a02" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
     <a id="a01" href="omg-index.html" title="OMG!" target="_blank">OMG!</a>
@@ -184,6 +199,11 @@ h2#froggies {
     <h2 id="froggies"><span style="background-color:white;padding:8px;">Froggies</span></h2>
 </section>
 <a href="frog-species-aus.html" target="_blank" title="Frog species of Australia">You want more?</a>
+
+<section>
+    <div class="centered"><img alt="Two frogs" style="width:66%;margin:12px;" src="pexels-cassidy-marshall-4953211.jpg"></div>
+    <div class="square">Ribbit McRibbit</div><div class="square">Froggo Froggs</div><div class="square">Toady Frog Toadster</div>
+</section>
 
 </body>
 </html>
