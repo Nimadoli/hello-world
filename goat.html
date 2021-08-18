@@ -31,26 +31,20 @@
             padding: 32px;
             margin: 24px;
         }
-        div {
-            display: -webkit-flex;
-            display: flex;
-            overflow: hidden;
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Fjalla One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
             color: #00264d;
         }
         h1 {font-size:2.8em}
-        article {
-            -webkit-flex: 3;
-            -ms-flex: 3;
-            flex: 3;
-            padding-right: 4vw;
-        }
         aside {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
+            float: right;
+            margin-left: 24px;
+            width: 60%;
         }
         .css-1jisqi6 {margin-top:0;}
         .css-7u7i0a {
@@ -135,21 +129,20 @@
             <a href="https://www.healthline.com/nutrition/goat-cheese" title="Source page">healthline.com/nutrition/goat-cheese</a>
         </address>
     </header>
-    <section>
-        <div>
-            <article>
-                <p>Creamy and distinct in flavor, goat cheese is a dairy product enjoyed around the world.</p>
-                <p>Goat cheese comes in a wide variety of flavors and textures, from soft and spreadable fresh cheese to salty, crumbly aged cheese. </p>
-                <p>Although it’s made using the same coagulation and separation process as cheese made from cow’s milk, goat cheese differs in nutrient content. </p>
-                <p>Additionally, goat cheese is digested differently than cow’s milk and is a hypoallergenic alternative for those allergic to cheese made from cow’s milk. </p>
-                <p>This article explains the nutritional benefits of goat cheese and provides creative ways to add this delicious cheese to your diet.</p>
-                <span class="material-icons" style="font-size:1.5em">share</span>
-            </article>
+    <section class="clear-fix">
+        <article>
             <aside>
-                <!-- Fix image sizing so that it does not overflow out of container - check flexbox settings. -->
+                <!-- Fix image sizing so that it does not overflow out of container - check float settings. -->
                 <img style="width:max-width;height:auto;" alt="Baaah" src="https://cdn.petpress.net/wp-content/uploads/2020/02/12045937/funny-goat-names.jpg">
             </aside>
-        </div>
+            <p>Creamy and distinct in flavor, goat cheese is a dairy product enjoyed around the world.</p>
+            <p>Goat cheese comes in a wide variety of flavors and textures, from soft and spreadable fresh cheese to salty, crumbly aged cheese. </p>
+            <p>Although it’s made using the same coagulation and separation process as cheese made from cow’s milk, goat cheese differs in nutrient content. </p>
+            <p>Additionally, goat cheese is digested differently than cow’s milk and is a hypoallergenic alternative for those allergic to cheese made from cow’s milk. </p>
+            <p>This article explains the nutritional benefits of goat cheese and provides creative ways to add this delicious cheese to your diet.</p>
+            <span class="material-icons" style="font-size:1.5em">share</span>
+            
+        </article>
     </section>  
     <section>
         <a class="chartbeat-section" name="nutrition"><h2>Goat Cheese Nutrition</h2></a>
