@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- 
+        To ensure proper interpretation and correct search engine indexing, both the language <html lang="eng"> and the character encoding <meta charset="charset"> should be defined as early as possible in an HTML document. 
+        UTF-8 covers almost all of the characters and symbols in the world.
+        If not specified, UTF-8 is the default character set in HTML.
+    -->
+    <title>Textures Gallery</title>
+    <meta name="keywords" content="nimadoli, HTML, web, design, development, metadata, template, webpage, webpages">
+    <meta name="description" content="Created by Nicole Oliveira (a.k.a. nimadoli).">
+    <meta name="author" content="Nicole Oliveira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 4%;
+            color: #111;
+            font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #bbb;
+        }
+        div.gallery {
+            background-color: white;
+            border: 1px solid #999;
+        }
+        div.gallery:hover {
+            border: 1px solid #444;
+        }
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        div.descr {
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #333;
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        .clear-fix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>    
+    <h1>Textures Gallery</h1>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="textures/Paint-Pattern001.png">
+                <img src="textures/Paint-Pattern001-Thumb.png" alt="Garden Image" width="300" height="300">
+            </a>
+            <div class="descr">A place of regeneration</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="textures/Paint-Pattern002.png">
+                <img src="textures/Paint-Pattern002-Thumb.png" alt="Flowering Image" width="300" height="300">
+            </a>
+            <div class="descr">Starts with the opening</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">    
+            <a target="_blank" href="textures/Paint-Pattern003.png">
+                <img src="textures/Paint-Pattern003-Thumb.png" alt="Blossom Image" width="300" height="300">
+            </a>
+            <div class="descr">Of a forgiving heart</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="textures/Paint-Pattern004.png">
+                <img src="textures/Paint-Pattern004-Thumb.png" alt="Care Image" width="300" height="300">
+            </a>
+            <div class="descr">Take it upon yourself</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="textures/Paint-Pattern005-Cropped.png">
+                <img src="textures/Paint-Pattern005-Cropped-Thumb.png" alt="Remember Image" width="300" height="300">
+            </a>
+            <div class="descr">To never forget the path there</div>
+        </div>
+    </div>
+
+    <div class="clear-fix"></div>
+</body>
