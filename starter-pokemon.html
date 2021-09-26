@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Starter Pokemon</title>
+    <meta name="keywords" content="nimadoli, HTML, web, design, development, metadata, template, webpage, webpages">
+    <meta name="description" content="Created by Nicole Oliveira (a.k.a. nimadoli).">
+    <meta name="author" content="Nicole Oliveira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 2%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #555;
+        }
+        section {
+            border-bottom: 1px solid black;
+            padding: 24px 0 24px;
+            width: 75%;
+            margin: auto;
+        }
+        div {
+            display: block;
+        }
+        .pokemon-sprite {
+            height: 80px;
+            width: 80px;
+        }
+        .bulbasaur {background: url('starter-pokemon.gif') -5px -5px;}
+        .ivysaur {background: url('starter-pokemon.gif') -95px -5px;}
+        .venusaur {background: url('starter-pokemon.gif') -185px -5px;}
+        .charmander {background: url('starter-pokemon.gif') -5px -95px;}
+        .charmeleon {background: url('starter-pokemon.gif') -95px -95px;}
+        .charizard {background: url('starter-pokemon.gif') -185px -95px;}
+        .squirtle {background: url('starter-pokemon.gif') -5px -190px;}
+        .wartortle {background: url('starter-pokemon.gif') -95px -190px;}
+        .blastoise {background: url('starter-pokemon.gif') -185px -190px;}
+        #pokeList {
+            position: relative;
+            height: 80px;
+        }
+        #pokeList li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            top: 0;
+        }
+        #pokeList li, #pokeList a {
+            height: 80px;
+            display: block;
+        }
+        #bulbasaur-li {left: 0px;}
+        #ivysaur-li {left: 140px;}
+        #venusaur-li {left: 280px;}
+        #charmander-hover:hover {background: url('starter-pokemon.gif') -95px -95px;}
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Starter Pokemon</h1>
+        <h2>A Page About Sprites</h2>
+        <div>
+            <h3>Bulbasaur, Ivysaur, Venusaur</h3>
+            <img class="bulbasaur pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="ivysaur pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="venusaur pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+        </div>
+        <div>
+            <h3>Charmander, Charmeleon, Charizard</h3>
+            <img class="charmander pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="charmeleon pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="charizard pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+        </div>
+        <div>
+            <h3>Squirtle, Wartortle, Blastoise</h3>
+            <img class="squirtle pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="wartortle pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+            <img class="blastoise pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+        </div>
+    </section>
+    <section>
+        <h2>Pokemon Sprite Navbar</h2>
+        <ul id="pokeList">
+            <li id="bulbasaur-li" class="bulbasaur pokemon-sprite"><a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)/" target="pokeIframe"></a></li>
+            <li id="ivysaur-li" class="ivysaur pokemon-sprite"><a href="https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)/" target="pokeIframe"></a></li>
+            <li id="venusaur-li" class="venusaur pokemon-sprite"><a href="https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pok%C3%A9mon)/" target="pokeIframe"></a></li>
+        </ul>
+        <iframe name="pokeIframe" width="600" height="400"></iframe>
+    </section>
+    <section>
+        <h2>Using a Sprite for Hover Effects</h2>
+        <a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)" target="_blank">
+            <img id="charmander-hover" class="charmander pokemon-sprite" src="transparent-pixel.gif" width="1" height="1">
+        </a>
+    </section>
+</body>
+</html>
